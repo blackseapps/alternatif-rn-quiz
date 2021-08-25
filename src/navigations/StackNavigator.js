@@ -1,7 +1,10 @@
 import React from 'react';
 import {StatusBar} from 'react-native';
 import {createStackNavigator} from '@react-navigation/stack';
-import HomeScreen from '../screens/HomeScreen';
+import WalletScreen from '../screens/wallet/WalletScreen';
+import MyCardsScreen from '../screens/mycard/MyCardsScreen';
+import BalanceScreen from '../screens/balance/BalanceScreen';
+import HistoryScreen from '../screens/history/HistoryScreen';
 import BottomNavigator from './BottomNavigator';
 import SplashSScreen from '../screens/SplashScreen';
 import LoginScreen from '../screens/auth/LoginScreen';
@@ -9,11 +12,10 @@ import LoginScreen from '../screens/auth/LoginScreen';
 const RootStack = createStackNavigator();
 const AuthStack = createStackNavigator();
 
-const HomeStack = createStackNavigator();
-const WalletStack = createStackNavigator();
-const TakeStack = createStackNavigator();
-const OrdersStack = createStackNavigator();
-const ProfileStack = createStackNavigator();
+const MyCardsStack = createStackNavigator();
+const WalletsStack = createStackNavigator();
+const BalanceStack = createStackNavigator();
+const HistoryStack = createStackNavigator();
 
 function StackNavigator() {
   return (
@@ -27,7 +29,6 @@ function StackNavigator() {
       <RootStack.Screen name="SplashScreen" component={SplashSScreen} />
       <RootStack.Screen name="AuthStack" component={StackAuth} />
       <RootStack.Screen name="BottomNavigation" component={BottomNavigator} />
-  
     </RootStack.Navigator>
   );
 }
@@ -43,44 +44,35 @@ export function StackAuth() {
   );
 }
 
-export function StackHome() {
+export function StackWallets() {
   return (
-    <HomeStack.Navigator>
-      <HomeStack.Screen name="HomeScreen" component={HomeScreen} />
-    </HomeStack.Navigator>
+    <WalletsStack.Navigator>
+      <WalletsStack.Screen name="WalletsScreen" component={WalletScreen} />
+    </WalletsStack.Navigator>
   );
 }
 
-export function StackWallet() {
+export function StackMyCards() {
   return (
-    <WalletStack.Navigator>
-    
-    </WalletStack.Navigator>
+    <MyCardsStack.Navigator>
+      <MyCardsStack.Screen name="MyCardsScreen" component={MyCardsScreen} />
+    </MyCardsStack.Navigator>
   );
 }
 
-export function StackStudio() {
+export function StackBalance() {
   return (
-    <TakeStack.Navigator>
-      
-    </TakeStack.Navigator>
+    <BalanceStack.Navigator>
+      <BalanceStack.Screen name="BalanceScreen" component={BalanceScreen} />
+    </BalanceStack.Navigator>
   );
 }
 
-export function StackOrders() {
+export function StackHistory() {
   return (
-    <OrdersStack.Navigator>
-     
-    </OrdersStack.Navigator>
-  );
-}
-
-export function StackProfile() {
-  return (
-    <ProfileStack.Navigator mode='modal' initialRouteName="ProfileScreen">
-    
-
-    </ProfileStack.Navigator>
+    <HistoryStack.Navigator>
+      <HistoryStack.Screen name="HistoryScreen" component={HistoryScreen} />
+    </HistoryStack.Navigator>
   );
 }
 

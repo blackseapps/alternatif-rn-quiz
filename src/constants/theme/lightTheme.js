@@ -7,14 +7,16 @@ const LightTheme = {
 
     // Project First Color
     primary: '#FFFFFF',
-    secondary: '#F5953C',
-    tertiary: '#E4DECE',
+    secondary: '#2C2C58',
+    tertiary: '#8C8C91',
 
     //Project White Colors
     white: '#FFFFFF',
 
     //Project Black Colors
     black: '#000000',
+
+    borderColor :'#707070',
   },
   Images: {
     

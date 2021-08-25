@@ -1,11 +1,11 @@
 const Fonts = {
-  regular: 'Ruboto-Regular',
-  bold: 'Ruboto-Bold',
-  black: 'Ruboto-Black',
-  italic: 'Ruboto-Italic',
-  light: 'Ruboto-Light',
-  medium: 'Ruboto-Medium',
-  thin: 'Ruboto-Thin',
+  regular: 'Roboto-Regular',
+  bold: 'Roboto-Bold',
+  black: 'Roboto-Black',
+  italic: 'Roboto-Italic',
+  light: 'Roboto-Light',
+  medium: 'Roboto-Medium',
+  thin: 'Roboto-Thin',
 };
 
 export default Fonts;

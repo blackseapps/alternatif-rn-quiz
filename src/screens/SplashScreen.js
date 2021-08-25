@@ -7,7 +7,7 @@ const SplashSScreen = props => {
 
   useEffect(() => {
     setTimeout(() => {
-      navigation.replace('BottomNavigation');
+      navigation.replace('AuthStack');
     }, 1000);
   }, []);
 

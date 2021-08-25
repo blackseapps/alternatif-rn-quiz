@@ -1,37 +1,29 @@
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
+import {StyleSheet, View, Text} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {useTheme} from '@react-navigation/native';
-import HeaderTitleLogo from '../views/header/HeaderTitleLogo';
+import {hp, wp} from '../../constants/Dimensions';
 
-const BalanceScreen = () => {
-  const navigation = useNavigation();
+const SubHeader = () => {
   const {Colors} = useTheme();
   const styles = Styles(Colors);
 
-  navigation.setOptions(
-    HeaderCustomOptions(
-      '',
-      Colors.secondary,
-      Colors.white,
-      [<HeaderTitleLogo />],
-      [],
-    ),
-  );
-
   return (
     <View style={styles.container}>
-      <View style={styles.content}></View>
+      <View style={styles.content}>
+       
+      </View>
     </View>
   );
 };
 
-export default HomeScreen;
+export default SubHeader;
 
 const Styles = Colors =>
   StyleSheet.create({
     container: {
-      flex: 1,
+      width: '100%',
+      height: hp(45),
       backgroundColor: Colors.primary,
     },
     content: {

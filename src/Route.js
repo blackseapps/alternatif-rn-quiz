@@ -6,7 +6,7 @@ import DarkTheme from './constants/theme/darkTheme';
 import LightTheme from './constants/theme/lightTheme';
 
 const Route = () => {
-  const [themeMode, setThemeMode] = useState('dark');
+  const [themeMode, setThemeMode] = useState('light');
 
   return (
     <NavigationContainer

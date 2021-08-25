@@ -6,9 +6,9 @@ const DarkTheme = {
     ...DefaultTheme.colors,
 
     // Project First Color
-    primary: '#FFFFFF',
-    secondary: '#F5953C',
-    tertiary: '#E4DECE',
+    primary: '#2C2C58',
+    secondary: '#FFFFFF',
+    tertiary: '#8C8C91',
 
     //Project White Colors
     white: '#FFFFFF',

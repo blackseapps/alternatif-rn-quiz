@@ -11,7 +11,7 @@ const HeaderTitle = props => {
   const {title, titleColor} = props;
   const {Colors} = useTheme();
   const styles = Styles(Colors);
-  
+
   return (
     <View style={styles.container}>
       <Text style={[styles.text, {color: titleColor}]}>{title}</Text>
@@ -21,16 +21,17 @@ const HeaderTitle = props => {
 
 export default HeaderTitle;
 
-const Styles = Colors => StyleSheet.create({
-  container: {
-    width: wp(218),
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    fontSize: FontSize(17),
-    fontWeight: '400',
-    textAlign: 'center',
-    color: Colors.TextColorPrimary,
-  },
-});
+const Styles = Colors =>
+  StyleSheet.create({
+    container: {
+      width: wp(218),
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    text: {
+      fontSize: FontSize(16),
+      fontFamily: Fonts.bold,
+      textAlign: 'center',
+      color: Colors.TextColorPrimary,
+    },
+  });

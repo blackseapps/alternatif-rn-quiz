@@ -1,10 +1,10 @@
 import React from 'react';
 import {View, StyleSheet, SafeAreaView, StatusBar} from 'react-native';
 import {
-  StackHome,
-  StackProfile,
-  StackOrders,
-  StackWallet,
+  StackWallets,
+  StackMyCards,
+  StackBalance,
+  StackHistory,
 } from './StackNavigator';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import CustomBottomTabBar from './CustomBottomTabBar';
@@ -31,14 +31,13 @@ export default function BottomNavigator() {
             <CustomBottomTabBar {...props} />
           </View>
         )}>
-          
-        <TabBottom.Screen name="Wallets" component={StackHome} />
+        <TabBottom.Screen name="Wallets" component={StackWallets} />
 
-        <TabBottom.Screen name="MyCards" component={StackWallet} />
+        <TabBottom.Screen name="MyCards" component={StackMyCards} />
 
-        <TabBottom.Screen name="Balance" component={StackOrders} />
+        <TabBottom.Screen name="Balance" component={StackBalance} />
 
-        <TabBottom.Screen name="History" component={StackProfile} />
+        <TabBottom.Screen name="History" component={StackHistory} />
       </TabBottom.Navigator>
     </>
   );
