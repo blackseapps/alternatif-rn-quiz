@@ -6,7 +6,7 @@ This is a example application.
 
 * Tasarim uzerinde bottom navigation uzerindeki itemlarda shodow bulunmakta.Normal shadow render edilirken performansi etkiledigi icin kullanmiyorum. Diger alternatifleri denemeye calisirim.Burada XD uzerinde svg olarak dogru sekilde export edemedigim icin yine style uzerinden shadow verdim.
   
-* XD uzerinden bazi gorselleri export ederken cozunurluklerinin dusuk oldugu gordum. Bazi gorsellerin kalitesi o yuzden dusuktur.
+* XD uzerinden bazi gorselleri export ederken cozunurluklerinin dusuk oldugunu gordum. Bazi gorsellerin kalitesi o yuzden dusuktur.
   
 * Wallet Screen de kullanilan buyuk oval gorsel XD uzerinden direk dogru sekilde export edilemedigi icin kendim bir svg dosyasi olusturmaya calistim.Detayli incelendiginde ufak olcu farklari olabilir.
   
