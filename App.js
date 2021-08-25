@@ -6,11 +6,10 @@ import configOSAndroidIOS from './src/utils/master/ConfigOSAndroidIOS';
 
 configOSAndroidIOS();
 
-
 LogBox.ignoreAllLogs();
 
 const App = () => {
-  return <Route></Route>;
+  return <Route />;
 };
 
 export default App;

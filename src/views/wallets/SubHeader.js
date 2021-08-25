@@ -45,23 +45,25 @@ const Styles = Colors =>
       height: hp(45),
     },
     content: {
+      width: '100%',
       height: hp(45),
-      marginHorizontal: wp(15),
+      marginLeft: wp(15),
       flexDirection: 'row',
       alignItems: 'center',
+      justifyContent: 'space-between',
     },
     searchInput: {
-      width: wp(213),
+      width: wp(190),
+    },
+    row: {
+      marginRight: wp(30),
+      flexDirection: 'row',
     },
     allWallets: {
       fontFamily: Fonts.bold,
       fontSize: FontSize(11),
     },
     allWalletsContainer: {
-      width: wp(90),
-      marginRight: wp(10),
-    },
-    row: {
-      flexDirection: 'row',
+      marginRight: wp(5),
     },
   });

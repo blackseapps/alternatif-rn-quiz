@@ -37,6 +37,7 @@ const CarouselComponent = props => {
         removeClippedSubviews={false}
         renderItem={renderItem}
         firstItem={index}
+        loop={true}
         layout={'default'}
         containerCustomStyle={{
           alignSelf: 'center',
@@ -91,6 +92,7 @@ const Styles = Colors =>
       height: hp(350),
     },
     container: {
+      width: '100%',
       height: hp(168),
       flexDirection: 'row',
       justifyContent: 'center',

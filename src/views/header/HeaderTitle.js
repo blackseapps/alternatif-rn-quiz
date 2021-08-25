@@ -24,7 +24,7 @@ export default HeaderTitle;
 const Styles = Colors =>
   StyleSheet.create({
     container: {
-      width: wp(218),
+      width: '100%',
       alignItems: 'center',
       justifyContent: 'center',
     },

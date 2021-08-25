@@ -92,7 +92,7 @@ export default function CustomBottomTabBar(props) {
 const Styles = Colors =>
   StyleSheet.create({
     container: {
-      width: wp(315),
+      width: '84%',
       height: hp(90),
       justifyContent: 'space-around',
       flexDirection: 'row',

@@ -42,6 +42,7 @@ const Styles = Colors =>
       backgroundColor: Colors.primary,
     },
     content: {
+      flex: 1,
       alignItems: 'center',
     },
     logo: {

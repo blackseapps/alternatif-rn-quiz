@@ -14,7 +14,12 @@ const SearchInputComponent = props => {
   return (
     <View style={[styles.container, containerStyle]}>
       <View style={styles.content}>
-        <Feather name={'search'} size={hp(16)} color={Colors.secondary} />
+        <Feather
+          name={'search'}
+          size={hp(16)}
+          color={Colors.secondary}
+          style={{alignSelf: 'center'}}
+        />
 
         <TextInput
           {...props}
@@ -40,17 +45,20 @@ export default SearchInputComponent;
 const Styles = Colors =>
   StyleSheet.create({
     container: {
-      width: wp(225),
+      width: '100%',
       height: hp(40),
       justifyContent: 'center',
     },
     content: {
       flexDirection: 'row',
+     
     },
     textInput: {
       width: '85%',
       fontSize: FontSize(11),
       marginLeft: wp(5),
       color: Colors.secondary,
+      paddingVertical: 0,
+      paddingHorizontal: 0,
     },
   });

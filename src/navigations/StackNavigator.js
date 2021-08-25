@@ -35,12 +35,9 @@ function StackNavigator() {
 
 export function StackAuth() {
   return (
-    <>
-      {_transparentStatusBar}
-      <AuthStack.Navigator initialRouteName="LoginScreen">
-        <AuthStack.Screen name="LoginScreen" component={LoginScreen} />
-      </AuthStack.Navigator>
-    </>
+    <AuthStack.Navigator initialRouteName="LoginScreen">
+      <AuthStack.Screen name="LoginScreen" component={LoginScreen} />
+    </AuthStack.Navigator>
   );
 }
 

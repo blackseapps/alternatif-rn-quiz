@@ -17,7 +17,7 @@ const ButtonBaseComponent = props => {
     IconLeft,
     IconRight,
   } = props;
-  
+
   const {Colors} = useTheme();
   const styles = Styles(Colors);
 
@@ -43,9 +43,9 @@ ButtonBaseComponent.defaultProps = {
 };
 
 ButtonBaseComponent.propTypes = {
-  title: PropTypes.array,
-  buttonStyle: PropTypes.number,
-  textStyle: PropTypes.number,
+  title: PropTypes.string,
+  buttonStyle: PropTypes.object,
+  textStyle: PropTypes.object,
 };
 
 export default ButtonBaseComponent;
@@ -53,7 +53,7 @@ export default ButtonBaseComponent;
 const Styles = Colors =>
   StyleSheet.create({
     button: {
-      width: wp(315),
+      width: '84%',
       height: hp(60),
       borderRadius: hp(30),
       justifyContent: 'space-around',

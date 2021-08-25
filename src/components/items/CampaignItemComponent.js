@@ -43,6 +43,7 @@ const Styles = Colors =>
       height: hp(168),
       backgroundColor: Colors.primary,
       borderRadius: hp(15),
+      marginRight:(-100)
     },
     content: {},
     headerColor: {
@@ -73,6 +74,8 @@ const Styles = Colors =>
       color: Colors.primaryText,
       marginLeft: wp(20),
       marginTop: hp(10),
+      paddingVertical: 0,
+      paddingHorizontal: 0,
     },
     row: {
       flexDirection: 'row',
@@ -90,11 +93,15 @@ const Styles = Colors =>
     activeCountTitle: {
       fontSize: FontSize(11),
       color: Colors.primaryText,
+      paddingVertical: 0,
+      paddingHorizontal: 0,
     },
     price: {
       fontSize: FontSize(14),
       fontFamily: Fonts.bold,
       color: Colors.primaryText,
+      paddingVertical: 0,
+      paddingHorizontal: 0,
     },
     priceUnit: {
       fontSize: FontSize(11),
@@ -102,5 +109,7 @@ const Styles = Colors =>
       color: Colors.primaryText,
       marginLeft: wp(2),
       marginTop: hp(3),
+      paddingVertical: 0,
+      paddingHorizontal: 0,
     },
   });

@@ -26,8 +26,8 @@ ButtonIconComponent.defaultProps = {
 };
 
 ButtonIconComponent.propTypes = {
-  title: PropTypes.array,
-  textStyle: PropTypes.number,
+  title: PropTypes.string,
+  textStyle: PropTypes.object,
 };
 
 export default ButtonIconComponent;
@@ -40,9 +40,5 @@ const Styles = Colors =>
       justifyContent: 'center',
       alignItems: 'center',
       alignSelf: 'center',
-    },
-    text: {
-      fontSize: FontSize(12),
-      color: Colors.secondary,
     },
   });

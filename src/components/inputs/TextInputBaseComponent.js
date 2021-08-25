@@ -120,21 +120,28 @@ const Styles = Colors =>
       resizeMode: 'contain',
       justifyContent: 'center',
       alignItems: 'center',
+      alignSelf: 'center',
     },
     textInput: {
       width: wp(280),
       fontSize: FontSize(16),
       color: Colors.secondary,
+      paddingVertical: 0,
+      paddingHorizontal: 0,
     },
     disabledTextInput: {
       width: wp(280),
       fontSize: FontSize(16),
       color: Colors.secondary,
+      paddingVertical: 0,
+      paddingHorizontal: 0,
     },
     errorText: {
       marginTop: hp(4),
       fontSize: FontSize(12),
       color: Colors.red,
       fontFamily: Fonts.bold,
+      paddingVertical: 0,
+      paddingHorizontal: 0,
     },
   });

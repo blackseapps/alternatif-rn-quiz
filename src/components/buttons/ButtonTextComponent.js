@@ -7,7 +7,7 @@ import {FontSize} from '../../constants/Sizes';
 
 const ButtonTextComponent = prop => {
   const {title, containerStyle, textStyle, onPress, textProps} = prop;
-  
+
   const {Colors} = useTheme();
   const styles = Styles(Colors);
 
@@ -28,8 +28,8 @@ ButtonTextComponent.defaultProps = {
 };
 
 ButtonTextComponent.propTypes = {
-  title: PropTypes.array,
-  textStyle: PropTypes.number,
+  title: PropTypes.string,
+  textStyle: PropTypes.object,
 };
 
 export default ButtonTextComponent;
@@ -37,7 +37,6 @@ export default ButtonTextComponent;
 const Styles = Colors =>
   StyleSheet.create({
     container: {
-      width: '100%',
       height: hp(25),
       justifyContent: 'center',
       alignItems: 'center',
@@ -46,5 +45,7 @@ const Styles = Colors =>
     text: {
       fontSize: FontSize(12),
       color: Colors.secondary,
+      paddingVertical: 0,
+      paddingHorizontal: 0,
     },
   });
