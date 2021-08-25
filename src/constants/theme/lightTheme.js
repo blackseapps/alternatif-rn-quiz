@@ -10,17 +10,24 @@ const LightTheme = {
     secondary: '#2C2C58',
     tertiary: '#8C8C91',
 
-    //Project White Colors
+    //Text Colors
+    primaryText: '#49495C',
+
+    //White Colors in Project
     white: '#FFFFFF',
 
-    //Project Black Colors
+    //Black Colors in Project
     black: '#000000',
 
-    borderColor :'#707070',
+    //Red Colors in Project
+    red: '#880808',
+
+    //Other Colors
+    borderColor: '#F5EFEF',
+    placeHolder: '#8C8CA4',
+    notificationStatus: '#FF7F00',
   },
-  Images: {
-    
-  },
+  Images: {},
 };
 
 export default LightTheme;

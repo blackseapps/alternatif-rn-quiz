@@ -1,11 +1,10 @@
 import React from 'react';
-import {View, StyleSheet, Image, TouchableOpacity, Text} from 'react-native';
+import {View, StyleSheet, Image} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {HeaderCustomOptions} from '../../navigations/NavigationHeaderOptions';
 import {useTheme} from '@react-navigation/native';
 import * as Images from '../../constants/Images';
 import {hp, wp} from '../../constants/Dimensions';
-import ButtonBaseComponent from '../../components/buttons/ButtonBaseComponent';
 import LoginFormView from '../../views/login/LoginFormView';
 
 const LoginScreen = () => {
@@ -49,6 +48,7 @@ const Styles = Colors =>
       width: wp(126),
       height: hp(54),
       marginTop: hp(165),
+      marginBottom: hp(30),
       resizeMode: 'contain',
     },
   });

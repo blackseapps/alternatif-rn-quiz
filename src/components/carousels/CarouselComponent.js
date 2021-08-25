@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from 'react';
-import {View, StyleSheet, Text} from 'react-native';
+import React, {useEffect} from 'react';
+import {View, StyleSheet} from 'react-native';
 import Carousel from 'react-native-snap-carousel';
 import PropTypes from 'prop-types';
 import {useTheme} from '@react-navigation/native';
@@ -14,8 +14,6 @@ const CarouselComponent = props => {
     idName,
     sliderWidth,
     itemWidth,
-    inactiveSlideScale,
-    inactiveSlideOpacity,
     onSnapToStart,
     onSnapToEnd,
   } = props;
@@ -34,7 +32,6 @@ const CarouselComponent = props => {
         data={data}
         sliderWidth={wp(sliderWidth)}
         itemWidth={wp(itemWidth)}
-        
         inactiveSlideOpacity={0.1}
         inactiveSlideScale={0.9}
         removeClippedSubviews={false}
@@ -68,6 +65,9 @@ CarouselComponent.defaultProps = {
   itemWidth: 200,
   inactiveSlideOpacity: 0.5,
   inactiveSlideScale: 1,
+  onSnapToStart: () => {},
+  onSnapToEnd: () => {},
+  onSnapToItem: () => {},
 };
 
 CarouselComponent.propTypes = {

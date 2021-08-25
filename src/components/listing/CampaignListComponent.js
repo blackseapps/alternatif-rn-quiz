@@ -12,7 +12,9 @@ const CampaignListComponent = props => {
   const styles = Styles(Colors);
 
   const renderItem = ({item, index}) => {
-    return <CampaignItemComponent index={index} item={item} />;
+    return (
+      <CampaignItemComponent index={index} item={item} onPress={() => {}} />
+    );
   };
 
   return (
@@ -24,7 +26,7 @@ const CampaignListComponent = props => {
         idName={'categoryId'}
         index={1}
         itemWidth={299}
-        onSnapToItem={(id, index) => {}}
+        
       />
     </View>
   );

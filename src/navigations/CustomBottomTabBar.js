@@ -5,6 +5,7 @@ import {
   StyleSheet,
   Text,
   ImageBackground,
+  SafeAreaView,
 } from 'react-native';
 import {hp, wp} from '../constants/Dimensions';
 import {useNavigation, useTheme} from '@react-navigation/native';
@@ -42,14 +43,10 @@ export default function CustomBottomTabBar(props) {
             </View>
           ) : (
             <View style={styles.tabButton}>
-              <View style={styles.bottomUnTab}>
-                <BottomUnTab />
-              </View>
-
               <View style={[styles.circle, {...styles.unCircle}]}>
                 <IconSource color={Colors.secondary} />
               </View>
-              <Text style={styles.activeTabTitle}>{title}</Text>
+              <Text style={styles.passiveTabTitle}>{title}</Text>
             </View>
           )}
         </TouchableOpacity>
@@ -58,61 +55,60 @@ export default function CustomBottomTabBar(props) {
   };
 
   return (
-    <View style={styles.TabBarMainContainer}>
-      <RenderTab
-        onPress={() => redirectScreen('Wallets')}
-        IconSource={WalletIcon}
-        index={0}
-        title={'CÜZDANLAR'}
-      />
+    <SafeAreaView>
+      <View style={styles.container}>
+        <RenderTab
+          onPress={() => redirectScreen('Wallets')}
+          IconSource={WalletIcon}
+          index={0}
+          title={'CÜZDANLAR'}
+        />
 
-      <RenderTab
-        onPress={() => redirectScreen('MyCards')}
-        IconSource={CardIcon}
-        index={1}
-        title={'KARTLARIM'}
-      />
+        <RenderTab
+          onPress={() => redirectScreen('MyCards')}
+          IconSource={CardIcon}
+          index={1}
+          title={'KARTLARIM'}
+        />
 
-      <RenderTab
-        onPress={() => redirectScreen('Balance')}
-        IconSource={BalanceIcon}
-        index={2}
-        title={'BAKIYE'}
-      />
+        <RenderTab
+          onPress={() => redirectScreen('Balance')}
+          IconSource={BalanceIcon}
+          index={2}
+          title={'BAKIYE'}
+        />
 
-      <RenderTab
-        onPress={() => redirectScreen('History')}
-        IconSource={HistoryIcon}
-        index={3}
-        title={'GEÇMIŞ'}
-      />
-    </View>
+        <RenderTab
+          onPress={() => redirectScreen('History')}
+          IconSource={HistoryIcon}
+          index={3}
+          title={'GEÇMIŞ'}
+        />
+      </View>
+    </SafeAreaView>
   );
 }
 
 const Styles = Colors =>
   StyleSheet.create({
     container: {
-      position: 'relative',
-      width: 75,
-      alignItems: 'center',
-    },
-    TabBarMainContainer: {
+      width: wp(315),
+      height: hp(90),
       justifyContent: 'space-around',
-      height: hp(80),
       flexDirection: 'row',
-      width: '100%',
-      marginTop: hp(25),
-    },
-    arrowTop: {
-      marginBottom: hp(-2),
+      alignSelf: 'center',
     },
     tab: {
-      height: 80,
+      height: hp(90),
       paddingBottom: hp(5),
       justifyContent: 'center',
       alignItems: 'center',
       flexGrow: 1,
+    },
+    arrowTop: {
+      position: 'absolute',
+      top: hp(-8),
+      left: wp(25),
     },
     tabButton: {
       justifyContent: 'center',
@@ -127,6 +123,17 @@ const Styles = Colors =>
       alignItems: 'center',
     },
     unCircle: {
+     
+      /** Normalde Shodaw Performansi Etkiledigi icin kullanmiyoruz.
+       ** Farkli yontemlerde shadow verilebilir. */
+      shadowColor: '#000',
+      shadowOffset: {
+        width: 0,
+        height: 2,
+      },
+      shadowOpacity: 0.23,
+      shadowRadius: 2.62,
+      elevation: 4,
       backgroundColor: Colors.primary,
     },
     bottomUnTab: {
@@ -136,10 +143,12 @@ const Styles = Colors =>
       fontSize: FontSize(8),
       color: Colors.secondary,
       fontFamily: Fonts.bold,
+      marginTop: hp(5),
     },
     passiveTabTitle: {
       fontSize: FontSize(8),
-      color: Colors.TextColorPrimary,
+      marginTop: hp(5),
+      color: Colors.tertiary,
       fontFamily: Fonts.bold,
     },
   });

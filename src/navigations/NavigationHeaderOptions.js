@@ -1,13 +1,9 @@
 import React from 'react';
-
 import HeaderTitle from '../views/header/HeaderTitle';
 import {
   _renderLeftButtons,
   _renderRightButtons,
 } from '../views/header/HeaderEnum';
-import BackButton from '../views/header/left/BackButton';
-import {HeaderButtonsWrapperLeft} from '../views/header/HeaderButtonsWrapper';
-import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 /**
  * Default Options for Top Header Component
@@ -62,7 +58,7 @@ export const HeaderCustomOptions = (
       shadowColor: color,
       elevation: 0,
       shadowRadius: 0,
-       borderBottomWidth: 1,
+      borderBottomWidth: 1,
     },
     headerLeft: props => _renderLeftButtons(leftButtons, props, color),
     headerRight: props => _renderRightButtons(rightButtons, props, color),

@@ -24,12 +24,10 @@ const Styles = Colors =>
   StyleSheet.create({
     containerRight: {
       flexDirection: 'row',
-      marginRight: wp(12),
       alignContent: 'center',
     },
     containerLeft: {
       flexDirection: 'row',
-      marginLeft: wp(12),
       alignContent: 'center',
     },
   });
