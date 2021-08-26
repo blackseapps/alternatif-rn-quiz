@@ -12,6 +12,8 @@ This is a example application.
   
 * Wallet Screen de kullanılan büyük oval görsel XD üzerinden direk doğru şekilde export edilemedigi için kendim bir svg dosyası oluşturmaya çalıstım.Detaylı incelendiğinde ufak ölcü farkları olabilir.
   
+* Dark Mode implementasyonu bulunmaktadır.
+  
 </details>
   
 <details>
