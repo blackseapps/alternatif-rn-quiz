@@ -1,8 +1,6 @@
 import React from 'react';
-import {StyleSheet, TouchableOpacity, View, Image} from 'react-native';
+import {StyleSheet, TouchableOpacity} from 'react-native';
 import {hp, wp} from '../../constants/Dimensions';
-
-import {selectBackgroundColor, selectIconColor} from './HeaderTheme';
 import {useTheme} from '@react-navigation/native';
 
 const HeaderButton = props => {

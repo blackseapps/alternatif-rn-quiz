@@ -2,7 +2,6 @@ import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {useTheme} from '@react-navigation/native';
-import HeaderTitleLogo from '../../views/header/HeaderTitleLogo';
 import {HeaderCustomOptions} from '../../navigations/NavigationHeaderOptions';
 import {FontSize} from '../../constants/Sizes';
 import Fonts from '../../constants/Fonts';

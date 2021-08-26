@@ -1,9 +1,6 @@
 import React from 'react';
-import {Image, View, Text, StyleSheet} from 'react-native';
-import {hp, wp} from '../../constants/Dimensions';
-import {useSelector} from 'react-redux';
+import {View, Text, StyleSheet} from 'react-native';
 import Fonts from '../../constants/Fonts';
-
 import {FontSize} from '../../constants/Sizes';
 import {useTheme} from '@react-navigation/native';
 

@@ -1,7 +1,5 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import {hp, wp} from '../../constants/Dimensions';
-
 import {useTheme} from '@react-navigation/native';
 
 export const HeaderButtonsWrapperRight = props => {
