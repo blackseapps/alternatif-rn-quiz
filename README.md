@@ -1,7 +1,7 @@
 # alternatif-rn-quiz
 This is a example application.
 
-<details>
+<details open>
 <summary><strong> Uygulamadan Notlar </strong></summary>
 
 * Tasarım üzerinde bulunan "carousel" yapısındaki listenin göründügü gibi fonksiyonel olması benim için önemliydi, itemları üzerinde epey çalıştım ama tam isteneni yakalıyamadim.Yalnız vakit kaybı olmasın diye şuanlik screenshotlarda göründügü gibi gönderiyorum.Eğer talep olur ise bu kısma devam edebilirim.
